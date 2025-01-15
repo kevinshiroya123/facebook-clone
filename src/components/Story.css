@@ -1,0 +1,46 @@
+.story {
+    width: 120px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Ensure the title stays at the bottom */
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0 5px;
+    position: relative; /* For absolute positioning of avatar */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgb(136, 136, 136); /* Fallback background color */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.722); /* Stronger shadow */
+    min-width: 70px;
+  }
+  
+  .story:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Avatar styling */
+  .story__avatar {
+    position: absolute; /* Make the avatar position relative to the .story container */
+    top: 10px; /* Position it near the top */
+    left: -10px; /* Position it near the left */
+    border: 3px solid #fff; /* White border around the avatar */
+    width: 40px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow for better visibility */
+  }
+  
+  /* Title styling */
+  .story__title {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Add text shadow for better readability */
+    margin-top: auto; /* Ensure the title stays at the bottom */
+    padding: 5px; /* Add some padding for spacing */
+  }
+  

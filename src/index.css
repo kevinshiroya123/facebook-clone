@@ -1,0 +1,19 @@
+/* Reset Default Margins and Padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in element's dimensions */
+}
+
+/* Set the height of HTML and Body to prevent overflow */
+html, body {
+  height: 100%;
+  overflow: hidden; /* Prevent any scrolling */
+}
+
+/* For App Component */
+#root {
+  height: 100%; /* Ensure the root container takes the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+}

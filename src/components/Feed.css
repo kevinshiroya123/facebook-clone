@@ -1,0 +1,55 @@
+/* Feed Component */
+.feed {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto; /* Center the feed */
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between child elements */
+    overflow-y: scroll; /* Enable scrolling for content overflow */
+    scrollbar-width: none; /* For Firefox: Hide scrollbar */
+    box-sizing: border-box; /* Include padding and border in width/height */
+}
+
+/* Hide the scrollbar for WebKit browsers (Chrome, Edge, Safari) */
+.feed::-webkit-scrollbar {
+    display: none; /* Completely hide the scrollbar */
+}
+
+/* General Flexbox Adjustments */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensure no element exceeds its container's width */
+    overflow: hidden; /* Prevent child overflow horizontally */
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Avoid excess width */
+}
+
+.flex-gap {
+    gap: 10px; /* Add default spacing */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .feed {
+        padding: 10px;
+    }
+
+    .feed__inputContainer {
+        flex-direction: column; /* Stack input fields vertically */
+        gap: 10px;
+    }
+
+    .feed__actions {
+        flex-direction: column; /* Stack action buttons vertically */
+    }
+}

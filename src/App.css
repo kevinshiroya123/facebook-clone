@@ -1,0 +1,61 @@
+/* Overall App Layout */
+.app {
+  display: flex;
+  flex-direction: column; /* Ensure Header is on top */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  overflow: hidden; /* Prevent scrollbars for unnecessary content */
+}
+.app__loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #555;
+  background-color: #f0f2f5;
+}
+
+/* Header Section */
+.app__header {
+  flex-shrink: 0; /* Prevent the header from shrinking */
+  width: 100%; /* Full width */
+  z-index: 10; /* Ensure it stays above other content */
+}
+
+/* Content Section */
+.app__content {
+  display: flex; /* Arrange Sidebar and Main Content in a row */
+  flex: 1; /* Take the remaining space below the header */
+  overflow: hidden; /* Prevent horizontal overflow */
+}
+
+/* Sidebar Section */
+.app__sidebar {
+  flex-shrink: 0; /* Prevent Sidebar from shrinking */
+  width: 250px; /* Fixed Sidebar width */
+  background-color: #fff;
+  height: calc(100vh - 60px); /* Adjust Sidebar height based on Header */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  overflow-y: auto; /* Enable vertical scrolling for Sidebar if needed */
+  position: sticky;
+  top: 60px; /* Match Header height */
+}
+
+/* Main Content Section */
+.app__main {
+  flex: 1; /* Take up remaining horizontal space */
+  padding: 20px; /* Add padding around the content */
+  background-color: #f0f2f5; /* Light background for main content */
+  overflow-y: auto; /* Enable vertical scrolling for content */
+  scrollbar-width: none; /* For Firefox: Hide scrollbar */
+   
+}
+
+.app__widget {
+  flex: 0 0 350px; /* Fixed width for widget */
+  background-color: #fff;
+  border-left: 1px solid #ddd;
+  overflow-y: auto; /* Enables vertical scrolling inside widget */
+}

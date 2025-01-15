@@ -1,0 +1,109 @@
+/* Feed Input Section */
+.feed__inputContainer {
+    display: flex;
+    flex-direction: column; /* Stack input and actions vertically */
+    gap: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.575);
+    border-radius: 12px;
+    margin: 20px 0;
+    padding: 20px;
+    min-width: 250px;
+  }
+  
+  .feed__avatarAndForm {
+    display: flex;
+    align-items: center; /* Align avatar and form on the same line */
+    gap: 10px;
+  }
+  
+  .feed__avatar {
+    width: 40px;
+    height: 40px;
+    align-self: center; /* Align avatar at the top of the form */
+  }
+  
+  .feed__form {
+    display: flex;
+    flex-direction: column; /* Stack input fields vertically */
+    gap: 10px;
+    flex: 1; /* Allow the form to take up the remaining space */
+  }
+  
+  .feed__input {
+    flex: 1;
+
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 14px;
+    background-color: #f0f2f5;
+  }
+  
+  .feed__imageInput {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 14px;
+    background-color: #f0f2f5;
+  }
+  
+  .feed__actions {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .feed__action {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    flex: 1;
+    justify-content: center;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .feed__action:hover {
+    background-color: #f0f2f5;
+  }
+  
+  .feed__icon {
+    font-size: 18px;
+  }
+  
+  .feed__icon--red {
+    color: #f02849;
+  }
+  
+  .feed__icon--green {
+    color: #42b72a;
+  }
+  
+  .feed__icon--yellow {
+    color: #f7b928;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .feed__inputContainer {
+      flex-direction: column; /* Stack input fields and actions vertically */
+      gap: 10px;
+    }
+  
+  
+    .feed__actions {
+      flex-direction: column; /* Stack action buttons vertically */
+    }
+  }
+  /* Media Query for Screens Less than 1000px */
+
+
+  
