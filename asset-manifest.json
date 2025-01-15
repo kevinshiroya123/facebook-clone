@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kevinshiroya123/facebook-clone/static/css/main.88ea4673.css",
-    "main.js": "/kevinshiroya123/facebook-clone/static/js/main.824da57b.js",
-    "static/js/488.0cfc8321.chunk.js": "/kevinshiroya123/facebook-clone/static/js/488.0cfc8321.chunk.js",
-    "index.html": "/kevinshiroya123/facebook-clone/index.html",
-    "main.88ea4673.css.map": "/kevinshiroya123/facebook-clone/static/css/main.88ea4673.css.map",
-    "main.824da57b.js.map": "/kevinshiroya123/facebook-clone/static/js/main.824da57b.js.map",
-    "488.0cfc8321.chunk.js.map": "/kevinshiroya123/facebook-clone/static/js/488.0cfc8321.chunk.js.map"
+    "main.css": "/facebook-clone/static/css/main.88ea4673.css",
+    "main.js": "/facebook-clone/static/js/main.d798a121.js",
+    "static/js/488.0cfc8321.chunk.js": "/facebook-clone/static/js/488.0cfc8321.chunk.js",
+    "index.html": "/facebook-clone/index.html",
+    "main.88ea4673.css.map": "/facebook-clone/static/css/main.88ea4673.css.map",
+    "main.d798a121.js.map": "/facebook-clone/static/js/main.d798a121.js.map",
+    "488.0cfc8321.chunk.js.map": "/facebook-clone/static/js/488.0cfc8321.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.88ea4673.css",
-    "static/js/main.824da57b.js"
+    "static/js/main.d798a121.js"
   ]
 }
